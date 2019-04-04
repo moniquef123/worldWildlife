@@ -17,20 +17,41 @@
 
 	<!-- Font Awesome Glyphicons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<!-- locall css style -->
+	<link rel="stylesheet" href="assets/css/homepage.css">
 
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	</style>
 </head>
-<body>
-	<div class="container">
-		<h1>Student Bio</h1>
-		<h3>Monique Flores</h3>
-		<img src="assets/images/IMG_0336.JPG" alt="" style="height: 200px; width: 200px">
-		<p>Write a short paragraph about yourself</p>
-		<ul>
-			<li>Email: <a href="https://moniquef@cpp.edu">moniquef@cpp.edu</a></li>
-			<li>Github: <a href="https://github.com/moniquef123">Github</a></li>
-			<li>Portfolio: <a href="https://moniquef123.github.io">Portfolio</a></li>
-		</ul>
-	<div>
+<body> 
+
+<div class="topnav" id="myTopnav"><img src="assets/images/Logo.jpg" alt="Avatar" class="avatar">
+  <a href="#Donation">Donation</a>
+  <a href="#Adoption">Adoption</a>
+	<a href="#About Us">About Us</a>
+	<a href="How you can help">How you can help</a>
+	<a href="Our Work">Our Work</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<img src="assets/images/gettyimages-57565588-1024x1024.jpg" alt="Nature" class="responsive">
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 </body>
 </html>
