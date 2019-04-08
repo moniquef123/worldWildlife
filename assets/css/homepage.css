@@ -6,12 +6,12 @@
 }
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: futura;
 }
 
 .topnav {
-  overflow: hidden;
-  background-color:#2E3192;
+  overflow: auto;
+  background-color: #2E3192;
 }
 
 .topnav a {
@@ -62,4 +62,83 @@ body {
     display: block;
     text-align: center;
   }
+}
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 100px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+h1 {
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  font-family: futura;
+  font-size: 150%;
+}
+p {
+  color: white;
+  text-align: center;
+  padding: 5px 16px;
+  font-family: futura;
+  font-size: 125%;
+  text-decoration: underline;
+}
+.responsive1 {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: middle;
+}
+
+h2 {
+  color: lightgrey;
+  text-align: left;
+  padding: 40px 40px;
+  font-size: 100%;
+  font-family: futura;
+}
+h3 {
+  color: lightgrey;
+  text-align: left;
+  padding: 40px 40px;
+  font-size: 100%;
+  font-family: futura;
 }
