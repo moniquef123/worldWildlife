@@ -90,7 +90,7 @@ p {
 h2 {
   color:  darkgrey;
   text-align: left;
-  padding: 10px 5px;
+  padding: 10px;
   font-size: 15px;
   font-family: futura;
 }
@@ -118,7 +118,7 @@ button {
   background-color:#F15A29;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 10px;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -208,7 +208,7 @@ hr {
 h3 {
   color: darkgrey;
   text-align: left;
-  padding: 10px 5px;
+  padding: 10px;
   font-size: 15px;
   font-family: futura;
 }
