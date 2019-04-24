@@ -218,7 +218,6 @@ h4 {
   font-size: 14px;
   font-family: futura;
   color: #888;
-  padding: 80px 0px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -263,3 +262,6 @@ h5 {
   border-color: #F15A29;
   width: 90px;
   }
+  .text-right {
+    text-align: right;
+}
