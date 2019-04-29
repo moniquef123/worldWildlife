@@ -1,0 +1,221 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Wildlife</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <a href="index.html"><img src="assets/images/Logo.jpg" alt="Avatar" class="avatar">World Wildlife Fund</a>
+    <div class="topnav" id="myTopnav" id="navbar">
+        <input type="text" placeholder="Search..">
+        <a href="Donation.hmtl">Donation</a>
+        <a href="Adoption.html">Adoption</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="HowYouCanHelp.html">How you can help</a>
+        <a href="OurWork.html">Our Work</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="container-fluid">
+        <h6>Donation</h6>
+        <p>Making a donation to the World Wildlife Fund
+            is helping protect endangered animals all over
+            the world. Your contribution makes a difference
+            and we thank you for your support.
+        </p>
+    </div>
+    <div class="container-fluid">
+        <h>Donation Amount</h>
+    </div>
+
+    <button type="button" class="btn btn-primary btn-lg">$10</button>
+    <button type="button" class="btn btn-primary btn-lg">$25</button>
+    <button type="button" class="btn btn-primary btn-lg">$40</button>
+    <button type="button" class="btn btn-primary btn-lg">$55</button>
+
+    <div class="container-fluid">
+        <h>Personal Information</h>
+    </div>
+    <form action="/action_page.php">
+        <div class="form-group">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                <label for="usr">Email</label>
+                <input type="text" class="form-control" id="usr" name="Email">
+            </div>
+            <div class="form-group">
+                <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                    <label for="pwd">First Name</label>
+                    <input type="first name" class="form-control" id="pwd" name="first name">
+                </div>
+                <div class="form-group">
+                    <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                        <label for="ln">Last Name</label>
+                        <input type="last name" class="form-control" id="ln" name="last name">
+                    </div>
+                    <div class="form-group">
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                            <label for="al1">Address Line 1</label>
+                            <input type="address line 1" class="form-control" id="al1" name="address line 1">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                <label for="al2">Address Line 2</label>
+                                <input type="address line 2" class="form-control" id="al2" name="address line 2">
+                            </div>
+                            <div class="form-group">
+                                <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                    <label for="cy">City</label>
+                                    <input type="city" class="form-control" id="cy" name="city">
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                            <label for="zc">Zipcode</label>
+                                            <input type="zipcode" class="form-control" id="zc" name="zipcode">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                                                <label for="inputCountry">Country</label>
+                                                <select id="inputCountry" class="form-control">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                                    <label for="pho">Phone</label>
+                                                    <input type="phone" class="form-control" id="pho" name="phone">
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <h>Payment Information</h>
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <p1>Choose Payment Method</p1>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">Visa</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label"
+                                                        for="inlineRadio2">MasterCard</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">Discover</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio"
+                                                        name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">American
+                                                        Express</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="cd"></div>
+                                                    <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                                        <label for="cd">Card Number</label>
+                                                        <input type="card number" class="form-control" id="cd"
+                                                            name="card number">
+                                                    </div>
+                                                    <div class="container-fluid">
+                                                        <p1>Expiration Date</p1>
+                                                    </div>
+                                                    <select class="custom-select">
+                                                        <option selected>Month</option>
+                                                        <option value="1">01-Jan</option>
+                                                        <option value="2">02-Feb</option>
+                                                        <option value="3">03-Mar</option>
+                                                        <option value="4">04-Apr</option>
+                                                        <option value="5">05-May</option>
+                                                        <option value="6">06-Jun</option>
+                                                        <option value="7">07-Jul</option>
+                                                        <option value="8">08-Aug</option>
+                                                        <option value="9">09-Sep</option>
+                                                        <option value="10">10-Oct</option>
+                                                        <option value="11">11-Nov</option>
+                                                        <option value="12">12-Dec</option>
+                                                    </select>
+                                                    <select class="custom-select">
+                                                        <option selected>Year</option>
+                                                        <option value="1">2019</option>
+                                                        <option value="2">2018</option>
+                                                        <option value="3">2017</option>
+                                                        <option value="4">2016</option>
+                                                        <option value="5">2015</option>
+                                                        <option value="6">2014</option>
+                                                        <option value="7">2013</option>
+                                                        <option value="8">2012</option>
+                                                        <option value="9">2011</option>
+                                                        <option value="10">2010</option>
+                                                        <option value="11">2009</option>
+                                                        <option value="12">2008</option>
+                                                    </select>
+                                                    <div class="form-group">
+                                                        <div class="cd"></div>
+                                                        <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                                                            <label for="cvv">CVV Number</label>
+                                                            <input type="cvv number" class="form-control" id="cvv"
+                                                                name="cvv number">
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <a href="DonationRec.html" class="btn btn-primary"
+                                                                role="button">Submit</a>
+                                                        </div>
+                                                        <div class="container-fluid">
+                                                            <div class="text-right">
+                                                                <a href="Help.html" class="btn btn-info"
+                                                                    role="button">Help</a>
+                                                                <h4>
+                                                                    World Wildlife Fund, <br> 1250 24th Street N.W.,
+                                                                    <br> Washington, DC 20037, <br>
+                                                                </h4>
+                                                            </div>
+
+
+
+    </form>
+    </div>

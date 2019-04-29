@@ -75,7 +75,6 @@ p {
   padding: 5px 16px;
   font-family: futura;
   font-size: 15px;
-  text-decoration: underline;
 }
 .responsive1 {
   /* vertical-align: right; */
@@ -88,11 +87,12 @@ p {
 }
 
 h2 {
-  color:  darkgrey;
+  color:  #888;
   text-align: left;
   padding: 10px;
   font-size: 15px;
   font-family: futura;
+  margin-left: 10px;
 }
 body {font-family: futura;}
 * {box-sizing: border-box;}
@@ -207,11 +207,12 @@ hr {
   }
 }
 h3 {
-  color: darkgrey;
+  color: #888;
   text-align: left;
   padding: 10px;
   font-size: 15px;
   font-family: futura;
+  margin-left: 10px;
 }
 h4 {
   text-align: left;
@@ -264,4 +265,46 @@ h5 {
   }
   .text-right {
     text-align: right;
+    margin-top: 300px;
+}
+h6 {
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+h {
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #2E3192;
+}
+.form-check-inline {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10px;
+  margin-right: .75rem;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+.cd {
+  margin-top: 40px;
+}
+.custom-select {
+  display: inline-block;
+  height: calc(2.25rem + 2px);
+  padding: .375rem 1.75rem .375rem .75rem;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  width: 30%;
+  margin-left: 15px;
+  margin-top: 20px;
 }

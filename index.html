@@ -54,6 +54,11 @@
 			}
 		}
 	</script>
+	<script>
+		$(document).ready(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
 
 	<link rel="stylesheet" href="assets/css/homepage.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -63,8 +68,8 @@
 	<a href="index.html"><img src="assets/images/Logo.jpg" alt="Avatar" class="avatar">World Wildlife Fund</a>
 	<div class="topnav" id="myTopnav" id="navbar">
 		<input type="text" placeholder="Search..">
-		<a href="#donation.hmtl">Donation</a>
-		<a href="#Adoption.html">Adoption</a>
+		<a href="Donation.hmtl">Donation</a>
+		<a href="Adoption.html">Adoption</a>
 		<a href="AboutUs.html">About Us</a>
 		<a href="HowYouCanHelp.html">How you can help</a>
 		<a href="OurWork.html">Our Work</a>
@@ -89,32 +94,40 @@
 		</div>
 		<div class="row text-center">
 			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-				<img src="assets/images/Cheetah.jpg" alt="Cheetah" class="responsive1">
+				<a href="#"><img src="assets/images/Cheetah.jpg" alt="Cheetah" class="responsive1" data-toggle="tooltip"
+						title="Cheetah's are the fastest land mammals in the world and are coming extremely close to extinction. They are just 7,100 cheetahs that are left in the wild."></a>
 			</div>
 
 			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-				<img src="assets/images/Panda.jpg" alt="Panda" class="responsive1">
+				<a href="#"><img src="assets/images/Panda.jpg" alt="Panda" class="responsive1" data-toggle="tooltip"
+						title="Panda's are endangered due to habitat loss and other various issues. It is estimated that there is only 1,800 pandas today."></a>
 			</div>
 
 			<div class="col-6  col-sm-6 col-md-4 col-lg-2">
-				<img src="assets/images/chimpanzee.jpg" alt="Chimpanzee" class="responsive1">
+				<a href="#"><img src="assets/images/chimpanzee.jpg" alt="Chimpanzee" class="responsive1"
+						data-toggle="tooltip"
+						title="Chimpanzee's share about 98% of our DNA, making them are closest cousins. It is said that there are around 172,700 to 299,700 left in the world."></a>
 			</div>
 
 			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-				<img src="assets/images/elephant.jpg" alt="Elephant" class="responsive1">
+				<a href="#"><img src="assets/images/elephant.jpg" alt="Elephant" class="responsive1"
+						data-toggle="tooltip"
+						title="Elephants are inteligent animals and due to habitat loss and people hunting them for their tusks put them at risk of endangerment. There is about 40,000 to 50,000 remaining.p"></a>
 			</div>
 
 			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-				<img src="assets/images/ferret.jpg" alt="Ferret" class="responsive1">
+					<a href="#"><img src="assets/images/ferret.jpg" alt="Ferret" class="responsive1" data-toggle="tooltip"
+						title="Ferrets are the rarest native mammal in the U.S. Due to them being killed and habitat loss the number is disclining. They were only 1,500 left but the number could be less now."></a>
 			</div>
 
 			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-				<img src="assets/images/pengiun.jpg" alt="Pengiun" class="responsive1">
+				<a href="#"><img src="assets/images/pengiun.jpg" alt="Pengiun" class="responsive1" data-toggle="tooltip"
+						title="Penguins"></a>
 			</div>
 		</div>
 
 		<div>
-			<h2>Get connected.</h2>
+			<h4>Get connected.</h4>
 
 			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
 
@@ -153,37 +166,48 @@
 			</div>
 
 		</div>
-		<h3>Already have an account?</h3>
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Login</button>
-		<div class="modal" id="myModal">
-			<form class="form-horizontal" action="/action_page.php">
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="email">Email:</label>
-					<div class="col-sm-10">
-						<input type="email" class="form-control" id="email" placeholder="Enter email">
+		<h4>Already have an account?</h4>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
+
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="loginModal">Login with WWF</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 					</div>
-				</div>
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="pwd">Password:</label>
-					<div class="col-sm-10">
-						<input type="password" class="form-control" id="pwd" placeholder="Enter password">
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						<div class="checkbox">
-							<label><input type="checkbox"> Remember me</label>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 text-center mt-4">
+								<div class="col-md-6 offset-3">
+								</div>
+								<form>
+									<div class="form-group">
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail"
+											aria-describeBy="emailHelp" placeholder="Enter email">
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1"
+											placeholder="Password">
+									</div>
+									<div class="form-group">
+										<div class="checkbox">
+											<label><input type="checkbox"> Remember me</label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-sm-offset-2 col-sm-10">
-						<button type="submit" class="btn btn-default">Submit</button>
-					</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Login</button>
 				</div>
-			</form>
-		</div>
-
 </body>
 
 </html>
