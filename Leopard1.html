@@ -1,0 +1,203 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Wildlife</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <link rel="stylesheet" href="assets/css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <a href="index.html"><img src="assets/images/Logo.jpg" alt="Avatar" class="avatar">World Wildlife Fund</a>
+    <div class="topnav" id="myTopnav" id="navbar">
+        <input type="text" placeholder="Search..">
+        <a href="Donation.html">Donation</a>
+        <a href="Adoption.html">Adoption</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="HowYouCanHelp.html">How you can help</a>
+        <a href="OurWork.html">Our Work</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="container">
+        <h6>Personal Information</h6>
+    </div>
+
+    <form action="/action_page.php">
+        <div class="form-group">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                <label for="usr">Email</label>
+                <input type="text" class="form-control" id="usr" name="Email">
+            </div>
+            <div class="form-group">
+                <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                    <label for="pwd">First Name</label>
+                    <input type="first name" class="form-control" id="pwd" name="first name">
+                </div>
+                <div class="form-group">
+                    <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                        <label for="ln">Last Name</label>
+                        <input type="last name" class="form-control" id="ln" name="last name">
+                    </div>
+                    <div class="form-group">
+                        <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                            <label for="al1">Address Line 1</label>
+                            <input type="address line 1" class="form-control" id="al1" name="address line 1">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                <label for="al2">Address Line 2</label>
+                                <input type="address line 2" class="form-control" id="al2" name="address line 2">
+                            </div>
+                            <div class="form-group">
+                                <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                    <label for="cy">City</label>
+                                    <input type="city" class="form-control" id="cy" name="city">
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                            <label for="zc">Zipcode</label>
+                                            <input type="zipcode" class="form-control" id="zc" name="zipcode">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-3 col-sm-2 col-md-2 col-lg-2">
+                                                <label for="inputCountry">Country</label>
+                                                <select id="inputCountry" class="form-control">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-10 col-sm-10 col-md-10 col-lg-10">
+                                                    <label for="pho">Phone</label>
+                                                    <input type="phone" class="form-control" id="pho" name="phone">
+                                                </div>
+
+                                                <div class="container-fluid">
+                                                    <div class="text-left" style="margin-top: 70px;">
+                                                        <a href="Leopard.html" class="btn btn-info"
+                                                            role="button">Back</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="text-center">
+                                                    <a href="Leopard2.html" class="btn btn-primary" role="button"
+                                                        style="width: 40%; margin-top: 10px;">Next Step</a>
+                                                </div>
+
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="card" style="margin-top: 150px;">
+                                                        <div class="card-header" id="headingOne">
+                                                            <h2 class="mb-0">
+                                                                <button class="btn btn-link" type="button"
+                                                                    data-toggle="collapse" data-target="#collapseOne"
+                                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                                    Shipping Information
+                                                                </button>
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="collapseOne" class="collapse show"
+                                                        aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Your order will
+                                                            be shipped in 6-10 business days.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingTwo">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link collapsed" type="button"
+                                                                data-toggle="collapse" data-target="#collapseTwo"
+                                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                                Donation Information
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                                        data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Your donation
+                                                            will be helping all the animals around
+                                                            the world that are in danger of going
+                                                            instinct. You support is very important
+                                                            to this cause and appreciated.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header" id="headingThree">
+                                                        <h2 class="mb-0">
+                                                            <button class="btn btn-link collapsed" type="button"
+                                                                data-toggle="collapse" data-target="#collapseThree"
+                                                                aria-expanded="false" aria-controls="collapseThree">
+                                                                Need Help?
+                                                            </button>
+                                                        </h2>
+                                                    </div>
+                                                    <div id="collapseThree" class="collapse"
+                                                        aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                        <div class="card-body">
+                                                            Customer Service: 111-111-1111
+                                                            M-F: 7am - 11pm ET
+                                                            Sat: 9am - 7pm ET
+                                                            Sun: 11am - 11pm ET
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="container-fluid">
+                                                <div class="text-right">
+                                                    <a href="Help.html" class="btn btn-info" role="button">Help</a>
+                                                    <h4>
+                                                        World Wildlife Fund, <br> 1250 24th Street N.W.,
+                                                        <br> Washington, DC 20037, <br>
+                                                    </h4>
+                                                </div>
