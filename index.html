@@ -91,130 +91,131 @@
 		<p>Endangered Animals</p>
 	</div>
 
-			<div class="row text-center">
-				<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-					<a href="#"><img src="assets/images/Cheetah.jpg" alt="Cheetah" class="responsive1"
-							data-toggle="tooltip" title="Cheetah's are the fastest land mammals in the world and are coming 
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
+				<a href="#"><img src="assets/images/Cheetah.jpg" alt="Cheetah" class="responsive1" data-toggle="tooltip"
+						title="Cheetah's are the fastest land mammals in the world and are coming 
 						extremely close to extinction. There are just 7,100 cheetahs that are left in the wild."></a>
-				</div>
+			</div>
 
-				<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-					<a href="#"><img src="assets/images/Panda.jpg" alt="Panda" class="responsive1" 
-						data-toggle="tooltip" title="Panda's are endangered due to habitat loss and other 
+			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
+				<a href="#"><img src="assets/images/Panda.jpg" alt="Panda" class="responsive1" data-toggle="tooltip"
+						title="Panda's are endangered due to habitat loss and other 
 						various issues. It is estimated that there is only 1,800 pandas today."></a>
-				</div>
+			</div>
 
-				<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-					<a href="#"><img src="assets/images/chimpanzee.jpg" alt="Chimpanzee" class="responsive1"
-							data-toggle="tooltip" title="Chimpanzee's share about 98% of our DNA, making them are closest cousins. 
+			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
+				<a href="#"><img src="assets/images/chimpanzee.jpg" alt="Chimpanzee" class="responsive1"
+						data-toggle="tooltip" title="Chimpanzee's share about 98% of our DNA, making them are closest cousins. 
 						It is said that there are around 172,700 to 299,700 left in the world."></a>
-				</div>
+			</div>
 
-				<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-					<a href="#"><img src="assets/images/elephant.jpg" alt="Elephant" class="responsive1"
-							data-toggle="tooltip" title="Elephants are inteligent animals and due to habitat loss and people hunting 
+			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
+				<a href="#"><img src="assets/images/elephant.jpg" alt="Elephant" class="responsive1"
+						data-toggle="tooltip" title="Elephants are inteligent animals and due to habitat loss and people hunting 
 						them for their tusks put them at risk of endangerment. There is about 40,000 to 50,000 remaining."></a>
-				</div>
+			</div>
 
-				<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-					<a href="#"><img src="assets/images/ferret.jpg" alt="Ferret" class="responsive1"
-							data-toggle="tooltip" title="Ferrets are the rarest native mammal in the U.S. Due to them being killed and 
+			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
+				<a href="#"><img src="assets/images/ferret.jpg" alt="Ferret" class="responsive1" data-toggle="tooltip"
+						title="Ferrets are the rarest native mammal in the U.S. Due to them being killed and 
 						habitat loss the number is disclining. They were only 1,500 left but the number could be less now."></a>
-				</div>
+			</div>
 
-				<div class="col-6 col-sm-6 col-md-4 col-lg-2">
-					<a href="#"><img src="assets/images/pengiun.jpg" alt="Pengiun" class="responsive1"
-							data-toggle="tooltip" title="There are 10 species of penguins that are at risk of extinction. 
+			<div class="col-6 col-sm-6 col-md-4 col-lg-2">
+				<a href="#"><img src="assets/images/pengiun.jpg" alt="Pengiun" class="responsive1" data-toggle="tooltip"
+						title="There are 10 species of penguins that are at risk of extinction. 
 						Their environment is threaten by humans which makes it hard for penguins to cope with the changes."></a>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<h4>Get connected.</h4>
+
+		<div><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign
+				Up</button></div>
+
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close"
+				title="Close Modal">&times;</span>
+			<form class="modal-content" action="/action_page.php">
+				<div class="container">
+					<h1>Sign Up</h1>
+					<p>Please fill in this form to create an account.</p>
+					<hr>
+					<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required>
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+
+					<label for="psw-repeat"><b>Repeat Password</b></label>
+					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+					<label>
+						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+						Remember me
+					</label>
+
+					<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
+							Privacy</a>.</p>
+
+					<div class="clearfix">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'"
+							class="cancelbtn">Cancel</button>
+						<button type="submit" class="signupbtn">Sign Up</button>
+					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 
-		<div>
-			<h4>Get connected.</h4>
+	</div>
+	<h4>Already have an account?</h4>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
 
-			<div><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign
-					Up</button></div>
-
-			<div id="id01" class="modal">
-				<span onclick="document.getElementById('id01').style.display='none'" class="close"
-					title="Close Modal">&times;</span>
-				<form class="modal-content" action="/action_page.php">
-					<div class="container">
-						<h1>Sign Up</h1>
-						<p>Please fill in this form to create an account.</p>
-						<hr>
-						<label for="email"><b>Email</b></label>
-						<input type="text" placeholder="Enter Email" name="email" required>
-
-						<label for="psw"><b>Password</b></label>
-						<input type="password" placeholder="Enter Password" name="psw" required>
-
-						<label for="psw-repeat"><b>Repeat Password</b></label>
-						<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-						<label>
-							<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-							Remember me
-						</label>
-
-						<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
-								Privacy</a>.</p>
-
-						<div class="clearfix">
-							<button type="button" onclick="document.getElementById('id01').style.display='none'"
-								class="cancelbtn">Cancel</button>
-							<button type="submit" class="signupbtn">Sign Up</button>
-						</div>
-					</div>
-				</form>
-			</div>
-
-		</div>
-		<h4>Already have an account?</h4>
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">Login</button>
-
-		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="loginModal">Login with WWF</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-md-12 text-center mt-4">
-								<div class="col-md-6 offset-3">
-								</div>
-								<form>
-									<div class="form-group">
-										<label for="exampleInputEmail1">Email address</label>
-										<input type="email" class="form-control" id="exampleInputEmail"
-											aria-describeBy="emailHelp" placeholder="Enter email">
-									</div>
-									<div class="form-group">
-										<label for="exampleInputPassword1">Password</label>
-										<input type="password" class="form-control" id="exampleInputPassword1"
-											placeholder="Password">
-									</div>
-									<div class="form-group">
-										<div class="checkbox">
-											<label><input type="checkbox">Remember me</label>
-										</div>
-									</div>
-								</form>
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="loginModal">Login with WWF</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12 text-center mt-4">
+							<div class="col-md-6 offset-3">
 							</div>
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail"
+										aria-describeBy="emailHelp" placeholder="Enter email">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<input type="password" class="form-control" id="exampleInputPassword1"
+										placeholder="Password">
+								</div>
+								<div class="form-group">
+									<div class="checkbox">
+										<label><input type="checkbox">Remember me</label>
+									</div>
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Login</button>
-				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">Login</button>
 			</div>
 		</div>
+	</div>
 	</div>
 </body>
 

@@ -282,7 +282,7 @@ h5 {
 
 .text-right {
   text-align: right;
-  margin-top: 300px;
+  margin-top: 50px;
 }
 
 h6 {
@@ -290,12 +290,6 @@ h6 {
   margin-top: 15px;
   text-decoration: underline;
   font-size: 25px;
-}
-
-h {
-  font-size: 20px;
-  text-decoration: underline;
-  text-decoration-color: #2E3192;
 }
 
 .form-check-inline {
@@ -336,11 +330,6 @@ h {
 img {
   vertical-align: middle;
   border-style: none;
-  width: 40%;
-  height: 40%;
-}
-.leopard {
-float: left;
 }
 .section-title {
   float: left;
